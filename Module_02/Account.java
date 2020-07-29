@@ -76,7 +76,8 @@ public class Account
 	
 	public void withdraw(double amount)
 	{
-		balance = balance - amount;
+		if (amount <= balance)
+			balance = balance - amount;
 	}
 	
 	public void deposit(double amount)
