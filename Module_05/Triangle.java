@@ -2,9 +2,11 @@ package mod5;
 
 /*
  * Author:	Stephen Lovell
- * Date:	11 Aug 2020
+ * Date:	14 Aug 2020
+ * 
+ * Updated to implement Colorable
  */
-public class Triangle extends GeometricObject
+public class Triangle extends GeometricObject implements Colorable
 {
 	double side1;
 	double side2;
@@ -93,5 +95,11 @@ public class Triangle extends GeometricObject
 	{
 		return "\tTriangle\nColor: " + color + "\nFilled: " + filled
 				+ "\nPerimeter: " + getPerimeter() + "\nArea: " + getArea();
+	}
+
+	@Override
+	public void howToColor()
+	{
+		System.out.println("Color all three sides");
 	}
 }
