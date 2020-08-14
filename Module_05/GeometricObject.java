@@ -2,9 +2,9 @@ package mod5;
 
 /*
  * Author:	Stephen Lovell
- * Date:	11 Aug 2020
+ * Date:	14 Aug 2020
  */
-public abstract class GeometricObject
+public abstract class GeometricObject implements Colorable
 {
 	String color;
 	boolean filled;
